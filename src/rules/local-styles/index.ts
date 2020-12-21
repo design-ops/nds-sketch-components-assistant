@@ -1,4 +1,4 @@
-import { RuleDefinition } from '@sketch-hq/sketch-assistant-types'
+import { RuleDefinition, SketchFileObject } from '@sketch-hq/sketch-assistant-types'
 
 export const localStyles: RuleDefinition = {
   rule: async (context) => {
@@ -6,17 +6,18 @@ export const localStyles: RuleDefinition = {
     interface Style {
       id: string
       name: string
+      object: SketchFileObject
     }
     var localStyles: Array<Style> = [];
     for (const sharedStyle of context.utils.objects.sharedStyle) {
       if (typeof sharedStyle.do_objectID === 'string') {
-        localStyles.push({ id: sharedStyle.do_objectID, name: sharedStyle.name });
+        localStyles.push({ id: sharedStyle.do_objectID, name: sharedStyle.name, object:sharedStyle });
       }
     }
 
     if (localStyles.length > 0) {
       for (const localStyle of localStyles) {
-        context.utils.report("\'" + localStyle.name + "\' is a local style")
+        context.utils.report("\'" + localStyle.name + "\' is a local style", localStyle.object)
       }
     }
 
