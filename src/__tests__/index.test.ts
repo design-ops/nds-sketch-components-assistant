@@ -9,7 +9,7 @@ test('Duplicate components', async () => {
     Assistant,
     "nds-sketch-components-assistant/duplicate-components"
   )
-  expect(violations[0].message).toBe("• '_navbar' has a duplicate component")
+  expect(violations[0].message).toBe("'_navbar' has a duplicate component")
   expect(violations).toHaveLength(1)
 })
 
