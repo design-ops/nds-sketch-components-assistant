@@ -53,3 +53,14 @@ test('Local styles', async () => {
   expect(violations[1].message).toBe("'title' is a local style")
   expect(violations).toHaveLength(2)
 })
+
+test('Symbol layer names', async () => {
+  const { violations } = await testRuleInAssistant(
+    resolve(__dirname, './symbol-layer-names.sketch'),
+    Assistant,
+    "nds-sketch-components-assistant/symbol-layer-names"
+  )
+  expect(violations[0].message).toBe("'Button 2' does not match the symbol master name '_button-primary'")
+  expect(violations[1].message).toBe("'Wand' does not match the symbol master name 'icon-wand'")
+  expect(violations).toHaveLength(2)
+})
