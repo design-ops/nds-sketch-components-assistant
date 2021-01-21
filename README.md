@@ -1,16 +1,11 @@
-# sketch-assistant-template
+# NDS Sketch component assistant
 
-> 💁‍♀️ This repository contains a starter project for developing a new Assistant.
+This Sketch Assistant is to be used when designing your component file for the Natural Design System. The Assistant performs the following checks on your component file:
 
-👉
-[Click here to generate a new project using this repository as a template](https://github.com/sketch-hq/sketch-assistant-template/generate)
+## Rules
 
-## Getting started
-
-For in-depth guides head over to the [Sketch Developer](https://developer.sketch.com/assistants/)
-site.
-
-- [Getting started](https://developer.sketch.com/assistants/getting-started)
-- [Write a rule](https://developer.sketch.com/assistants/write-a-rule)
-- [Publishing](https://developer.sketch.com/assistants/publish)
-- And more!
+* [Shape layer names](./src/rules/shape-layer-names)
+* [Text layer names](./src/rules/text-layer-names)
+* [Component names](./src/rules/component-names)
+* [Duplicate components](./src/rules/duplicate-components)
+* [Local styles](./src/rules/local-styles)
