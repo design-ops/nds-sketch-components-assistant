@@ -2,6 +2,12 @@
 
 This Sketch Assistant is to be used when designing your component file for the Natural Design System. The Assistant performs the following checks on your component file:
 
+## Installation
+
+👉 To install automatically, **copy and paste** the following link into a new browser tab:
+
+`sketch://add-assistant?url=https://github.com/design-ops/nds-sketch-components-assistant/releases/download/v1.0.0/nds-sketch-components-assistant-1.0.0.tgz`
+
 ## Rules
 
 * [Component names](./src/rules/component-names)
