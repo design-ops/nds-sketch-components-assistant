@@ -13,6 +13,8 @@ This Sketch Assistant is to be used when designing your component file for the N
 
 ## Installation
 
-👉 To install automatically, **copy and paste** the following link into a new browser tab:
+:gem: [Click here to install automatically](http://j76.me/qDoa)
+
+:point_right: or **copy & paste** the following link into a new browser:
 
 `sketch://add-assistant?url=https://github.com/design-ops/nds-sketch-components-assistant/releases/download/v1.0.0/nds-sketch-components-assistant-1.0.0.tgz`
