@@ -8,7 +8,7 @@
   "sketch-assistant": {
     "title": "NDS Sketch Component Assistant",
     "description": "Sketch Component file assistant for use with the Natural Design System",
-    "icon": ""
+    "icon": "https://github.com/design-ops/nds-sketch-theme-assistant/blob/main/assets/icon.png"
   },
   "author": {
     "name": "Design Ops"
